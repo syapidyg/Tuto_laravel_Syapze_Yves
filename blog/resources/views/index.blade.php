@@ -9,5 +9,5 @@
 @endsection
 
 @section('content')
-        <p>Bonjour {{ $name }}</p>
+        <p>Bonjour {{$name}}</p>
 @endsection

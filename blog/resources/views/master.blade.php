@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    @yield('content')
+    @yield('meta')
 </head>
 <body>
     
     @section('sidebar')
 
     <div class="container">
-        @yield('containt')
+        @yield('content')
     </div>
 </body>
 </html>

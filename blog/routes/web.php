@@ -14,12 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Route::get('/master', function () {
     return view('master');
 });
+Route::get('/index', function () {
+    return view('index');
+});
 
-Route::get('/index', [IndexController::class]);
+Route::get('/', (IndexController::class));
