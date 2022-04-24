@@ -26,3 +26,9 @@ Route::get('/index', function () {
 });
 
 Route::get('/', (IndexController::class));
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+route::get('/', [IndexController::class, 'index']);
